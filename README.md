@@ -1,3 +1,5 @@
+# enzo-collision-isothermal (modified by Joohyun Lee)
+
 # ENZO
 
 ENZO IS AN OPEN SOURCE CODE.  We encourage you to take it, inspect it, use it,
@@ -116,5 +118,3 @@ list of the people who have recently contributed, in alphabetical order:
    * Hao Xu                 haoxu.physics@gmail.com
    * Alvaro Zamora          alvarozamora@stanford.edu  
    * Fen Zhao               fenzhao@stanford.edu
-# enzo-collision-isothermal
-# enzo-collision-isothermal
