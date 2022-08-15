@@ -194,8 +194,10 @@ c
                tdyn  = sqrt(3._RKIND*pi_val/32._RKIND/
      &                      GravConst/dtot)/t1
 
-               if (tdyn .lt. cooltime(i,j,k) .and. 
-     &             temp(i,j,k) .gt. 1.1e4_RKIND) goto 10   
+               if (tdyn .lt. cooltime(i,j,k)) goto 10 
+c       .and. temp(i,j,k) .gt. 1.1e4_RKIND) goto 10   
+c       JL, 14 Aug 22 removed T < 1.1e4 skip
+
 c
 c  NO JEANS MASS CRITERION IN THIS ALGORITHM!!!
 c  JHK, 12 JUN 09 (fix [1] jun 09)

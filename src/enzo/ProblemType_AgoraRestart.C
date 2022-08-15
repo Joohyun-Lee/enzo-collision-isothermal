@@ -714,8 +714,8 @@ public:
         if (radius<=radius2) {
             vcirc = this->InterpolateVcircTable(xy_radius);
             
-            // Dec 2021 JL isothermal initialization
-            vcirc = 0.0;
+            // Dec 2021 JL no-rotation isothermal initialization
+            //vcirc = 0.0;
 		
             thisgrid->BaryonField[Vel1Num][index] = (-vcirc*y/xy_radius/VelocityUnits)*cos(theta)-(vcirc*x/xy_radius/VelocityUnits)*cos(theta)*sin(phi)
                                                     +GalaxyVelocity[0]*1e5/VelocityUnits;
